@@ -1,0 +1,11 @@
+|WalkingStick
+clk => sound_signal.CLK
+clk => vibrate_signal.CLK
+clk => isActive.CLK
+activate => isActive.DATAIN
+hold => sound_signal.DATAB
+obstacle => vibrate_signal.DATAB
+vibrate <= vibrate_signal.DB_MAX_OUTPUT_PORT_TYPE
+sound <= sound_signal.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,47 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+
+ENTITY DigitalClock IS
+	PORT(
+		start, reset: IN STD_LOGIC;
+		seconds, minutes: OUT INTEGER RANGE 0 TO 59;
+		hours: OUT INTEGER RANGE 0 TO 23
+	);
+END DigitalClock;
+
+ARCHITECTURE clock_arch OF DigitalClock IS
+	SIGNAL sec_counter, min_counter, hour_counter: INTEGER;
+BEGIN
+	PROCESS(start)
+	BEGIN
+		IF reset = '0' THEN
+			sec_counter <= 0;
+			min_counter <= 0;
+			hour_counter <= 0;
+		
+		ELSIF rising_edge(start) THEN
+			sec_counter <= sec_counter + 1;
+			
+			IF sec_counter = 60 THEN
+				sec_counter <= 0;
+				min_counter <= min_counter + 1;
+				
+				IF min_counter = 60 THEN
+					min_counter <= 0;
+					hour_counter <= hour_counter + 1;
+					
+					IF hour_counter = 24 THEN 
+						hour_counter <= 0;
+					END IF;
+				END IF;
+			END IF;
+		END IF;
+	END PROCESS;
+	
+	seconds <= 0 WHEN reset = '0' ELSE sec_counter;
+   minutes <= 0 WHEN reset = '0' ELSE min_counter;
+   hours <= 0 WHEN reset = '0' ELSE hour_counter;
+
+	
+END clock_arch;

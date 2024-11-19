@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vibrate",
+					"strict" : false
+				},
+				{
+					"name" : "sound",
+					"strict" : false
+				},
+				{
+					"name" : "obstacle",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "hold",
+					"strict" : false
+				},
+				{
+					"name" : "activate",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

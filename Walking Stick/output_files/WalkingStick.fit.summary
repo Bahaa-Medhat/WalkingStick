@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Nov 17 04:12:51 2024
+Fitter Status : Successful - Wed Nov 20 18:15:53 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : WalkingStick
 Top-level Entity Name : WalkingStick
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Final
-Total logic elements : 4 / 8,064 ( < 1 % )
-    Total combinational functions : 3 / 8,064 ( < 1 % )
-    Dedicated logic registers : 3 / 8,064 ( < 1 % )
-Total registers : 3
-Total pins : 6 / 250 ( 2 % )
+Total logic elements : 49 / 8,064 ( < 1 % )
+    Total combinational functions : 46 / 8,064 ( < 1 % )
+    Dedicated logic registers : 36 / 8,064 ( < 1 % )
+Total registers : 36
+Total pins : 7 / 250 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 387,072 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )

@@ -1,11 +1,45 @@
 |WalkingStick
 clk => sound_signal.CLK
 clk => vibrate_signal.CLK
+clk => obstacle_trig~reg0.CLK
+clk => trigger_counter[0].CLK
+clk => trigger_counter[1].CLK
+clk => trigger_counter[2].CLK
+clk => trigger_counter[3].CLK
+clk => trigger_counter[4].CLK
+clk => trigger_counter[5].CLK
+clk => trigger_counter[6].CLK
+clk => trigger_counter[7].CLK
+clk => trigger_counter[8].CLK
+clk => trigger_counter[9].CLK
+clk => trigger_counter[10].CLK
+clk => trigger_counter[11].CLK
+clk => trigger_counter[12].CLK
+clk => trigger_counter[13].CLK
+clk => trigger_counter[14].CLK
+clk => trigger_counter[15].CLK
+clk => trigger_counter[16].CLK
+clk => trigger_counter[17].CLK
+clk => trigger_counter[18].CLK
+clk => trigger_counter[19].CLK
+clk => trigger_counter[20].CLK
+clk => trigger_counter[21].CLK
+clk => trigger_counter[22].CLK
+clk => trigger_counter[23].CLK
+clk => trigger_counter[24].CLK
+clk => trigger_counter[25].CLK
+clk => trigger_counter[26].CLK
+clk => trigger_counter[27].CLK
+clk => trigger_counter[28].CLK
+clk => trigger_counter[29].CLK
+clk => trigger_counter[30].CLK
+clk => trigger_counter[31].CLK
 clk => isActive.CLK
 activate => isActive.DATAIN
 hold => sound_signal.DATAB
-obstacle => vibrate_signal.DATAB
+obstacle_echo => vibrate_signal.DATAB
 vibrate <= vibrate_signal.DB_MAX_OUTPUT_PORT_TYPE
 sound <= sound_signal.DB_MAX_OUTPUT_PORT_TYPE
+obstacle_trig <= obstacle_trig~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

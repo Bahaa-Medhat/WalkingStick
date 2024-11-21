@@ -12,7 +12,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "obstacle",
+					"name" : "obstacle_trig",
+					"strict" : false
+				},
+				{
+					"name" : "obstacle_echo",
 					"strict" : false
 				},
 				{

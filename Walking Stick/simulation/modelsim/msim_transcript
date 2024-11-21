@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/WalkingStick.vhd}
+# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:31:08 on Nov 17,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/WalkingStick.vhd 
+# Start time: 18:16:08 on Nov 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,24 +21,24 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity WalkingStick
 # -- Compiling architecture WalkingStick_arch of WalkingStick
-# End time: 05:31:08 on Nov 17,2024, Elapsed time: 0:00:00
+# End time: 18:16:08 on Nov 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/simulation/modelsim/WalkingStick.vht}
+# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:31:09 on Nov 17,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/simulation/modelsim/WalkingStick.vht 
+# Start time: 18:16:08 on Nov 20,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity WalkingStick_vhd_tst
 # -- Compiling architecture WalkingStick_arch of WalkingStick_vhd_tst
-# End time: 05:31:09 on Nov 17,2024, Elapsed time: 0:00:00
+# End time: 18:16:08 on Nov 20,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  my_testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" my_testbench 
-# Start time: 05:31:10 on Nov 17,2024
+# Start time: 18:16:09 on Nov 20,2024
 # ** Error: (vsim-3170) Could not find 'my_testbench'.
 #         Searched libraries:
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
@@ -47,26 +47,15 @@
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/fiftyfivenm
-#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/simulation/modelsim/rtl_work
-#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Walking Stick/simulation/modelsim/rtl_work
+#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/rtl_work
+#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/rtl_work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./WalkingStick_run_msim_rtl_vhdl.do PAUSED at line 12
-vsim work.walkingstick
-# vsim work.walkingstick 
-# Start time: 05:31:10 on Nov 17,2024
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.walkingstick(walkingstick_arch)
 vsim work.walkingstick_vhd_tst
-# End time: 05:31:36 on Nov 17,2024, Elapsed time: 0:00:26
-# Errors: 1, Warnings: 0
 # vsim work.walkingstick_vhd_tst 
-# Start time: 05:31:37 on Nov 17,2024
+# Start time: 18:16:09 on Nov 20,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -77,10 +66,11 @@ vsim work.walkingstick_vhd_tst
 add wave -position end  sim:/walkingstick_vhd_tst/activate
 add wave -position end  sim:/walkingstick_vhd_tst/clk
 add wave -position end  sim:/walkingstick_vhd_tst/hold
-add wave -position end  sim:/walkingstick_vhd_tst/obstacle
+add wave -position end  sim:/walkingstick_vhd_tst/obstacle_echo
 add wave -position end  sim:/walkingstick_vhd_tst/sound
 add wave -position end  sim:/walkingstick_vhd_tst/vibrate
-force -freeze sim:/walkingstick_vhd_tst/clk 0 0, 1 {10 ps} -r {20 ps}
+add wave -position end  sim:/walkingstick_vhd_tst/obstacle_trig
+force -freeze sim:/walkingstick_vhd_tst/clk 0 0, 1 {5 ps} -r 10
 run
-# End time: 05:36:57 on Nov 17,2024, Elapsed time: 0:05:20
-# Errors: 0, Warnings: 0
+# End time: 18:17:57 on Nov 20,2024, Elapsed time: 0:01:48
+# Errors: 1, Warnings: 0

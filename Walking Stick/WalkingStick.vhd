@@ -16,6 +16,7 @@ ARCHITECTURE WalkingStick_arch OF WalkingStick IS
 	
 	SIGNAL isActive, vibrate_signal, sound_signal: std_logic := '0';
 	SIGNAL echo_start, echo_end: INTEGER := 0;
+	SIGNAL trigger_counter: INTEGER := 0;
 	
 BEGIN
 
@@ -30,17 +31,11 @@ BEGIN
 	
 	-- Trigger signal process (generate a 10 us pulse)
     PROCESS(clk)
-    VARIABLE trigger_counter: INTEGER := 0;
     BEGIN
         IF rising_edge(clk) THEN
             IF isActive = '1' THEN
-                IF trigger_counter < 10 THEN
-                    obstacle_trig <= '1';
-                    trigger_counter := trigger_counter + 1;
-                ELSE
-                    obstacle_trig <= '0';
-                END IF;
-            ELSE
+                obstacle_trig <= '1';
+				ELSE
                 obstacle_trig <= '0';
             END IF;
         END IF;

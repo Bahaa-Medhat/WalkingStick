@@ -14,7 +14,7 @@ END WalkingStick;
 
 ARCHITECTURE WalkingStick_arch OF WalkingStick IS
 	
-	SIGNAL isActive, vibrate_signal, sound_signal: std_logic := '0';
+	SIGNAL isActive, vibrate_signal, sound_signal, trig: std_logic := '0';
 	SIGNAL echo_start, echo_end: INTEGER := 0;
 	SIGNAL trigger_counter: INTEGER := 0;
 	
@@ -29,14 +29,21 @@ BEGIN
 		END IF;
 	END PROCESS;
 	
-	-- Trigger signal process (generate a 10 us pulse)
+    -- Trigger Signal Process (Generate a 10 μs Pulse)
     PROCESS(clk)
     BEGIN
         IF rising_edge(clk) THEN
             IF isActive = '1' THEN
-                obstacle_trig <= '1';
-				ELSE
-                obstacle_trig <= '0';
+                IF trigger_counter < 100 THEN 
+                    trig <= '1';
+                    trigger_counter <= trigger_counter + 1;
+                ELSE
+                    trig <= '0';
+                    trigger_counter <= 0; 
+                END IF;
+            ELSE
+                trig <= '0'; 
+                trigger_counter <= 0;
             END IF;
         END IF;
     END PROCESS;
@@ -51,19 +58,6 @@ BEGIN
 						ELSE
 							vibrate_signal <= '0';
 						END IF;
-                --IF obstacle_echo = '1' THEN
-                    --echo_start <= echo_start + 1;
-                --ELSE
-                    --echo_end <= echo_start;
-                    --echo_start <= 0;
-                --END IF;
-
-                -- Check if obstacle is within threshold
-                --IF echo_end > 0 AND echo_end < 100 THEN
-                    --vibrate_signal <= '1';
-                --ELSE
-                    --vibrate_signal <= '0';
-                --END IF;
             ELSE
                 vibrate_signal <= '0';
             END IF;
@@ -88,6 +82,7 @@ BEGIN
 		END IF;
 	END PROCESS;
 	
+	obstacle_trig <= trig;
 	sound <= sound_signal;
 	vibrate <= vibrate_signal;
 	

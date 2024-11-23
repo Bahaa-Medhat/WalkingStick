@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "11/23/2024 00:31:11"
+-- DATE "11/23/2024 20:54:25"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -387,11 +387,11 @@ PORT MAP (
 -- Location: LCCOMB_X44_Y1_N12
 \vibrate_signal~0\ : fiftyfivenm_lcell_comb
 -- Equation(s):
--- \vibrate_signal~0_combout\ = (\isActive~q\ & \obstacle_echo~input_o\)
+-- \vibrate_signal~0_combout\ = (\isActive~q\ & !\obstacle_echo~input_o\)
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111000000000000",
+	lut_mask => "0000000011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (

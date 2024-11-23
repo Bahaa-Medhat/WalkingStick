@@ -53,7 +53,7 @@ BEGIN
     BEGIN
         IF rising_edge(clk) THEN
             IF isActive = '1' THEN
-						IF obstacle_echo = '1' THEN
+						IF obstacle_echo = '0' THEN
 							vibrate_signal <= '1';
 						ELSE
 							vibrate_signal <= '0';

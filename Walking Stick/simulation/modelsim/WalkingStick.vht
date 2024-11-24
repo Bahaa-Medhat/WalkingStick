@@ -48,7 +48,7 @@ BEGIN
 	hold <= '1';
 	WAIT FOR 10 ns;
 
-	-- Test Case 2: An obstacle is detected, and then nothing is detected
+	-- Test Case 2: No obstacle, and then an obstacle is detected
 	obstacle_echo <= '1';
 	WAIT FOR 10 ns;
 	obstacle_echo <= '0';
@@ -56,16 +56,16 @@ BEGIN
 
 	-- Test Case 3: Simultaneous sound and vibrate
 	hold <= '0';
-	obstacle_echo <= '1';
+	obstacle_echo <= '0';
 	WAIT FOR 10 ns;
 	hold <= '1';
-	obstacle_echo <= '0';
+	obstacle_echo <= '1';
 	WAIT FOR 10 ns;
 
 	-- Test Case 4: The stick is deactivated
 	activate <= '0';
 	hold <= '0';
-	obstacle_echo <= '1';
+	obstacle_echo <= '0';
 	WAIT;
 	
 END PROCESS sim_process;

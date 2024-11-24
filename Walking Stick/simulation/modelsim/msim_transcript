@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:27:11 on Nov 23,2024
+# Start time: 20:41:47 on Nov 24,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,24 +21,24 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity WalkingStick
 # -- Compiling architecture WalkingStick_arch of WalkingStick
-# End time: 00:27:11 on Nov 23,2024, Elapsed time: 0:00:00
+# End time: 20:41:47 on Nov 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 00:27:12 on Nov 23,2024
+# Start time: 20:41:47 on Nov 24,2024
 # vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity WalkingStick_vhd_tst
 # -- Compiling architecture WalkingStick_arch of WalkingStick_vhd_tst
-# End time: 00:27:12 on Nov 23,2024, Elapsed time: 0:00:00
+# End time: 20:41:47 on Nov 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  my_testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" my_testbench 
-# Start time: 00:27:12 on Nov 23,2024
+# Start time: 20:41:47 on Nov 24,2024
 # ** Error: (vsim-3170) Could not find 'my_testbench'.
 #         Searched libraries:
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
@@ -55,7 +55,7 @@
 # MACRO ./WalkingStick_run_msim_rtl_vhdl.do PAUSED at line 12
 vsim work.walkingstick_vhd_tst
 # vsim work.walkingstick_vhd_tst 
-# Start time: 00:27:12 on Nov 23,2024
+# Start time: 20:41:47 on Nov 24,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -72,5 +72,5 @@ add wave -position end  sim:/walkingstick_vhd_tst/vibrate
 add wave -position end  sim:/walkingstick_vhd_tst/obstacle_trig
 force -freeze sim:/walkingstick_vhd_tst/clk 0 0, 1 {5 ps} -r 10
 run
-# End time: 00:29:09 on Nov 23,2024, Elapsed time: 0:01:57
+# End time: 20:47:24 on Nov 24,2024, Elapsed time: 0:05:37
 # Errors: 1, Warnings: 0

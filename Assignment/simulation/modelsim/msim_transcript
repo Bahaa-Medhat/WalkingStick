@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/DigitalClock.vhd}
+# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/DigitalClock.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 04:42:41 on Nov 17,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/DigitalClock.vhd 
+# Start time: 20:53:13 on Nov 24,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/DigitalClock.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -21,24 +21,24 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity DigitalClock
 # -- Compiling architecture clock_arch of DigitalClock
-# End time: 04:42:41 on Nov 17,2024, Elapsed time: 0:00:00
+# End time: 20:53:13 on Nov 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/simulation/modelsim/DigitalClock.vht}
+# vcom -93 -work work {C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 04:42:41 on Nov 17,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/simulation/modelsim/DigitalClock.vht 
+# Start time: 20:53:15 on Nov 24,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DigitalClock_vhd_tst
 # -- Compiling architecture DigitalClock_arch of DigitalClock_vhd_tst
-# End time: 04:42:41 on Nov 17,2024, Elapsed time: 0:00:00
+# End time: 20:53:15 on Nov 24,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  my_testbench
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" my_testbench 
-# Start time: 04:42:41 on Nov 17,2024
+# Start time: 20:53:15 on Nov 24,2024
 # ** Error: (vsim-3170) Could not find 'my_testbench'.
 #         Searched libraries:
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera
@@ -47,15 +47,15 @@
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
 #             C:/intelFPGA_lite/20.1/modelsim_ase/altera/vhdl/fiftyfivenm
-#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/simulation/modelsim/rtl_work
-#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Assignment/simulation/modelsim/rtl_work
+#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/rtl_work
+#             C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/rtl_work
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./DigitalClock_run_msim_rtl_vhdl.do PAUSED at line 12
 vsim work.digitalclock_vhd_tst
 # vsim work.digitalclock_vhd_tst 
-# Start time: 04:42:41 on Nov 17,2024
+# Start time: 20:53:15 on Nov 24,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -68,20 +68,7 @@ add wave -position end  sim:/digitalclock_vhd_tst/reset
 add wave -position end  sim:/digitalclock_vhd_tst/hours
 add wave -position end  sim:/digitalclock_vhd_tst/minutes
 add wave -position end  sim:/digitalclock_vhd_tst/seconds
-force -freeze sim:/digitalclock_vhd_tst/clk 0 0, 1 {10 ps} -r {20 ps}
+force -freeze sim:/digitalclock_vhd_tst/clk 0 0, 1 {5 ps} -r 10
 run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-force -freeze sim:/digitalclock_vhd_tst/clk 0 0, 1 {5 ps} -r {10 ps}
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-restart
-force -freeze sim:/digitalclock_vhd_tst/clk 0 0, 1 {10 ps} -r {20 ps}
-run
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# End time: 04:46:08 on Nov 17,2024, Elapsed time: 0:03:27
-# Errors: 0, Warnings: 0
+# End time: 20:55:12 on Nov 24,2024, Elapsed time: 0:01:57
+# Errors: 1, Warnings: 0

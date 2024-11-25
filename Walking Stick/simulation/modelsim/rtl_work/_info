@@ -25,9 +25,9 @@ Vgo`3Iie0_6ni8e6M1lmZn2
 !s100 J_U3FiaE@VGSJeZZR=]mW2
 Z8 OV;C;2020.1;71
 31
-Z9 !s110 1732473707
+Z9 !s110 1732481635
 !i10b 1
-Z10 !s108 1732473707.000000
+Z10 !s108 1732481635.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd|
 Z12 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/WalkingStick.vhd|
 !i113 1
@@ -55,7 +55,7 @@ R12
 R13
 R14
 Ewalkingstick_vhd_tst
-Z15 w1732473690
+Z15 w1732481621
 R4
 R5
 !i122 1
@@ -68,10 +68,10 @@ VKU`AH[MznUUmzPQc9[4k@0
 !s100 <@KGc?d9n9FU10zOX[jK20
 R8
 31
-R9
+Z18 !s110 1732481638
 !i10b 1
-R10
-Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht|
+Z19 !s108 1732481637.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht|
 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht|
 !i113 1
 R13
@@ -87,11 +87,11 @@ V2?mMakk4LKP:fBXhZNmKT3
 !s100 =B_:j8=[^43[oB[;G9RVg2
 R8
 31
-R9
-!i10b 1
-R10
 R18
-Z19 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht|
+!i10b 1
+R19
+R20
+Z21 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Walking Stick/simulation/modelsim/WalkingStick.vht|
 !i113 1
 R13
 R14

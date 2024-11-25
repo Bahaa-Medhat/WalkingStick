@@ -25,9 +25,9 @@ VP:L>cDE:U5LJ1?Z_]70;l3
 !s100 Z5c8ma@[F]4]j6LD2n7N`2
 Z8 OV;C;2020.1;71
 31
-Z9 !s110 1732474393
+Z9 !s110 1732486858
 !i10b 1
-Z10 !s108 1732474393.000000
+Z10 !s108 1732486858.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/DigitalClock.vhd|
 Z12 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/DigitalClock.vhd|
 !i113 1
@@ -55,7 +55,7 @@ R12
 R13
 R14
 Edigitalclock_vhd_tst
-Z15 w1732474371
+Z15 w1732474744
 R4
 R5
 !i122 1
@@ -68,10 +68,10 @@ VelTKFJ>ZIGRCUe6dP2[9M1
 !s100 2G85<WRlQ8hm5_ojnUVN72
 R8
 31
-Z18 !s110 1732474395
+R9
 !i10b 1
-Z19 !s108 1732474395.000000
-Z20 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht|
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht|
 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht|
 !i113 1
 R13
@@ -83,15 +83,15 @@ DEx4 work 20 digitalclock_vhd_tst 0 22 elTKFJ>ZIGRCUe6dP2[9M1
 !i122 1
 l27
 L7 42
-Vo_>CMSFG2@dG0dH?C]=l11
-!s100 :@od:Q>7C8hd`S`mcJQ6h3
+VQ<6k`InR8`5A>A]b]ZAi;3
+!s100 MakNJZnK@ho[nggDE?0U<1
 R8
 31
-R18
+R9
 !i10b 1
-R19
-R20
-Z21 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht|
+R10
+R18
+Z19 !s107 C:/Users/bhmed/Desktop/GUC/Semester 5/(CSEN605) Digital System Design/Project/Code/Assignment/simulation/modelsim/DigitalClock.vht|
 !i113 1
 R13
 R14

@@ -38,11 +38,11 @@ BEGIN
 	sim_process : PROCESS
 	BEGIN
 		reset <= '1';
-		wait for 54 ns; -- Time reaches 1:30:00
+		wait for 108 ns; -- Time reaches 1:30:00
 		reset <= '0';
-		wait for 54 ns; -- Apply reset signal
+		wait for 108 ns; -- Apply reset signal
 		reset <= '1';
-		wait for 108 ns; -- Time reaches 3:00:00
+		wait for 216 ns; -- Time reaches 3:00:00
 	END PROCESS;
 
 END DigitalClock_arch;
